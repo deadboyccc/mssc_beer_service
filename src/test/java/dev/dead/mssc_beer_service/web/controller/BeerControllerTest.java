@@ -16,7 +16,6 @@ import org.springframework.http.MediaType;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import dev.dead.mssc_beer_service.web.model.BeerDto;
-import dev.dead.mssc_beer_service.web.model.BeerStyleEnum;
 
 @WebMvcTest(BeerController.class)
 public class BeerControllerTest {
