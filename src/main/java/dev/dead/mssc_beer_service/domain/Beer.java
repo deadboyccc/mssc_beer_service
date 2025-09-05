@@ -44,7 +44,7 @@ public class Beer {
   private String beerStyle;
 
   @Column(unique = true, nullable = false)
-  private Long upc;
+  private String upc;
 
   @Column(nullable = false, precision = 10, scale = 2)
   private BigDecimal price;
