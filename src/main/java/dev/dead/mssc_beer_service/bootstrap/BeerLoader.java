@@ -64,6 +64,7 @@ public class BeerLoader implements CommandLineRunner {
         .build();
 
     beerRepository.saveAll(List.of(b1, b2, b3));
+    System.out.println("Beer Count: " + beerRepository.count());
   }
 
 }
