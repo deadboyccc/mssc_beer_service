@@ -47,6 +47,8 @@ class BeerDtoJacksonTest {
         BeerDto beerDto = objectMapper.readValue(jsonString, BeerDto.class);
         System.out.println(beerDto.getBeerName() + " : " + beerDto.getBeerStyle().toString());
         System.out.println(beerDto);
+        System.out.println(beerDto);
+        System.out.println(beerDto);
     }
 }
 
