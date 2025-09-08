@@ -21,32 +21,32 @@ import java.util.UUID;
 @Builder
 public class BeerDto {
 
-  @Null
-  @JsonProperty("beerId")
-  private UUID id;
-  @Null
-  private Integer version;
-
-  @Null
-//  @JsonFormat(pattern = "yyyy-MM-dd",shape = JsonFormat.Shape.STRING)
-  private OffsetDateTime createdDate;
+    @Null
+    @JsonProperty("beerId")
+    private UUID id;
+    @Null
+    private Integer version;
 
     @Null
-  private OffsetDateTime lastModified;
+//  @JsonFormat(pattern = "yyyy-MM-dd",shape = JsonFormat.Shape.STRING)
+    private OffsetDateTime createdDate;
 
-  @NotBlank
-  private String beerName;
+    @Null
+    private OffsetDateTime lastModified;
 
-    @NotNull
-  private BeerStyleEnum beerStyle;
-
-  @NotNull
-  @Positive
-  private Long upc;
+    @NotBlank
+    private String beerName;
 
     @NotNull
-  @Positive
+    private BeerStyleEnum beerStyle;
+
+    @NotNull
+    @Positive
+    private Long upc;
+
+    @NotNull
+    @Positive
     @JsonFormat(shape = JsonFormat.Shape.STRING)
-  private BigDecimal price;
-  private Integer quantityOnHand;
+    private BigDecimal price;
+    private Integer quantityOnHand;
 }
